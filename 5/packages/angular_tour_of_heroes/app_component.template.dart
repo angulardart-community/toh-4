@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -42,10 +40,10 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
   import3.Element _el_2;
   import3.UListElement _el_4;
   ViewContainer _appEl_5;
-  import5.NgFor _NgFor_5_7;
+  import5.NgFor _NgFor_5_9;
   import3.Element _el_6;
   import6.ViewHeroDetailComponent0 _compView_6;
-  import7.HeroDetailComponent _HeroDetailComponent_6_4;
+  import7.HeroDetailComponent _HeroDetailComponent_6_5;
   var _expr_1;
   var _expr_2;
   static RenderComponentType _renderType;
@@ -72,24 +70,16 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     var _anchor_5 = ngAnchor.clone(false);
     _el_4.append(_anchor_5);
     _appEl_5 = new ViewContainer(5, 4, this, _anchor_5);
-    TemplateRef _TemplateRef_5_6 = new TemplateRef(_appEl_5, viewFactory_AppComponent1);
-    _NgFor_5_7 = new import5.NgFor(_appEl_5, _TemplateRef_5_6);
+    TemplateRef _TemplateRef_5_8 = new TemplateRef(_appEl_5, viewFactory_AppComponent1);
+    _NgFor_5_9 = new import5.NgFor(_appEl_5, _TemplateRef_5_8);
     _compView_6 = new import6.ViewHeroDetailComponent0(this, 6);
     _el_6 = _compView_6.rootEl;
     parentRenderNode.append(_el_6);
     addShimC(_el_6);
-    _HeroDetailComponent_6_4 = new import7.HeroDetailComponent();
-    _compView_6.create(_HeroDetailComponent_6_4, []);
+    _HeroDetailComponent_6_5 = new import7.HeroDetailComponent();
+    _compView_6.create(_HeroDetailComponent_6_5, []);
     init(const [], null);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import7.HeroDetailComponent) && (6 == nodeIndex))) {
-      return _HeroDetailComponent_6_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -98,13 +88,13 @@ class ViewAppComponent0 extends AppView<import2.AppComponent> {
     bool firstCheck = (this.cdState == 0);
     final currVal_1 = _ctx.heroes;
     if (!identical(_expr_1, currVal_1)) {
-      _NgFor_5_7.ngForOf = currVal_1;
+      _NgFor_5_9.ngForOf = currVal_1;
       _expr_1 = currVal_1;
     }
-    _NgFor_5_7.ngDoCheck();
+    _NgFor_5_9.ngDoCheck();
     final currVal_2 = _ctx.selectedHero;
     if (!identical(_expr_2, currVal_2)) {
-      _HeroDetailComponent_6_4.hero = currVal_2;
+      _HeroDetailComponent_6_5.hero = currVal_2;
       _expr_2 = currVal_2;
     }
     _appEl_5.detectChangesInNestedViews();
@@ -190,27 +180,24 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import15.HeroService _HeroService_0_4;
-  import2.AppComponent _AppComponent_0_5;
+  import15.HeroService _HeroService_0_5;
+  import2.AppComponent _AppComponent_0_6;
   _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import9.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _HeroService_0_4 = new import15.HeroService();
-    _AppComponent_0_5 = new import2.AppComponent(_HeroService_0_4);
-    _compView_0.create(_AppComponent_0_5, projectableNodes);
+    _HeroService_0_5 = new import15.HeroService();
+    _AppComponent_0_6 = new import2.AppComponent(_HeroService_0_5);
+    _compView_0.create(_AppComponent_0_6, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import2.AppComponent>(0, this, rootEl, _AppComponent_0_5);
+    return new ComponentRef<import2.AppComponent>(0, this, rootEl, _AppComponent_0_6);
   }
 
   @override
   dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
     if ((identical(token, import15.HeroService) && (0 == nodeIndex))) {
-      return _HeroService_0_4;
-    }
-    if ((identical(token, import2.AppComponent) && (0 == nodeIndex))) {
-      return _AppComponent_0_5;
+      return _HeroService_0_5;
     }
     return notFoundResult;
   }
@@ -219,7 +206,7 @@ class _ViewAppComponentHost0 extends AppView<dynamic> {
   void detectChangesInternal() {
     bool firstCheck = (this.cdState == 0);
     if (firstCheck) {
-      _AppComponent_0_5.ngOnInit();
+      _AppComponent_0_6.ngOnInit();
     }
     _compView_0.detectChanges();
   }
