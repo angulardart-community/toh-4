@@ -10646,7 +10646,7 @@ this.r.appendChild(r)
 r=S.cf(s,"h2",t)
 this.y=r
 this.bu(r)
-q=s.createTextNode("My Heroes")
+q=s.createTextNode("Heroes")
 this.y.appendChild(q)
 r=S.cf(s,"ul",t)
 this.z=r
@@ -10779,7 +10779,7 @@ b4:function(){var t=this.r
 if(!(t==null))t.e8()},
 $asT:function(){return[A.aC]}}
 M.fn.prototype={
-ak:function(){var t,s,r,q,p
+ak:function(){var t,s,r,q
 t=document
 s=t.createElement("div")
 this.r=s
@@ -10788,8 +10788,6 @@ this.x=s
 r=t.createTextNode("")
 this.y=r
 s.appendChild(r)
-q=t.createTextNode(" details!")
-this.x.appendChild(q)
 r=S.ul(t,this.r)
 this.z=r
 r=S.cf(t,"label",r)
@@ -10818,12 +10816,12 @@ s=this.db;(s&&C.C).cB(s,"input",this.cG(this.gfX()))
 s=this.db;(s&&C.C).cB(s,"blur",this.im(this.dx.gjf()))
 s=this.fr.f
 s.toString
-p=new P.by(s,[H.x(s,0)]).be(this.cG(this.gfZ()))
-this.cM([this.r],[p])
+q=new P.by(s,[H.x(s,0)]).be(this.cG(this.gfZ()))
+this.cM([this.r],[q])
 return},
-cQ:function(a,b,c){if(a===C.b0&&11===b)return this.dx
-if(a===C.aL&&11===b)return this.dy
-if((a===C.b6||a===C.b4)&&11===b)return this.fr
+cQ:function(a,b,c){if(a===C.b0&&10===b)return this.dx
+if(a===C.aL&&10===b)return this.dy
+if((a===C.b6||a===C.b4)&&10===b)return this.fr
 return c},
 an:function(){var t,s,r,q
 t=this.f
